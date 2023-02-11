@@ -11,7 +11,8 @@ export default function Weather(props) {
       />
       <div className="temperature">
         <span className="degrees">{props.temperature} </span>{" "}
-        <a href="#">°C |</a> <a href="#">°F</a>
+        <a href="https://en.wikipedia.org/wiki/Celsius">°C |</a>{" "}
+        <a href="https://en.wikipedia.org/wiki/Fahrenheit">°F</a>
       </div>
       <div className="indicators">
         <ul>
