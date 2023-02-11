@@ -1,0 +1,36 @@
+.Weather {
+  display: flex;
+}
+
+.Weather img {
+  max-width: 75px;
+  height: 100%;
+}
+
+.Weather .temperature {
+  margin: 0px 10px;
+}
+
+.Weather .degrees {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.Weather a {
+  text-decoration: none;
+  vertical-align: 4px;
+}
+
+.Weather a:hover {
+  text-decoration: underline;
+}
+
+.Weather ul {
+  margin: 0px;
+  list-style: none;
+  line-height: 23px;
+  padding-left: 20px;
+  color: grey;
+  font-weight: 300;
+  font-size: 15px;
+}

@@ -1,25 +1,25 @@
-import axios from "axios";
-import ClipLoader from "react-spinners/ClipLoader";
+import React from "react";
+import "./Weather.css";
 
 export default function Weather(props) {
-  function handleWeather(response) {
-    alert(
-      `The temperature in ${props.city} is ${Math.round(
-        response.data.main.temp
-      )}˚C`
-    );
-  }
-  let apiKey = "502dc8f7ae36e57af1974e18d16a86f8";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=${apiKey}&units=metric`;
-
-  axios.get(apiUrl).then(handleWeather);
   return (
-    <ClipLoader
-      color="#000000"
-      loading="true"
-      size={150}
-      aria-label="Loading Spinner"
-      data-testid="loader"
-    />
+    <div className="Weather">
+      <img
+        src="https://i.pinimg.com/originals/53/be/db/53bedbe8c1048ca2be44fa2cdd7d4c63.png"
+        alt="Sunny"
+        class="weather-img"
+      />
+      <div className="temperature">
+        <span className="degrees">{props.temperature} </span>{" "}
+        <a href="#">°C |</a> <a href="#">°F</a>
+      </div>
+      <div className="indicators">
+        <ul>
+          <li>Clear sky</li>
+          <li>Humidity: {props.humidity}%</li>
+          <li>Wind speed: {props.windspeed}m/s</li>
+        </ul>
+      </div>
+    </div>
   );
 }
