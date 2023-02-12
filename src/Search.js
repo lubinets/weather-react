@@ -6,11 +6,15 @@ export default function Search() {
     <form className="Search">
       <input
         type="search"
-        className="search-bar"
+        className="search-bar form-control"
         placeholder="Type your city..."
       />
 
-      <input type="submit" className="submit-button" value="Search" />
+      <input
+        type="submit"
+        className="btn btn-primary submit-button"
+        value="Search"
+      />
     </form>
   );
 }
