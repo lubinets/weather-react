@@ -43,6 +43,12 @@ export default function App() {
           />
         </div>
       </div>
+      <div className="repository-link">
+        <a href="https://github.com/lubinets/weather-react" target="blank_">
+          Open-source code
+        </a>{" "}
+        by Karina Lubinets
+      </div>
     </div>
   );
 }

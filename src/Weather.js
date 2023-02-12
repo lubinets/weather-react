@@ -7,7 +7,7 @@ export default function Weather(props) {
       <img
         src="https://i.pinimg.com/originals/53/be/db/53bedbe8c1048ca2be44fa2cdd7d4c63.png"
         alt="Sunny"
-        class="weather-img"
+        className="weather-img"
       />
       <div className="temperature">
         <span className="degrees">{props.temperature} </span>{" "}
