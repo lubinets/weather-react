@@ -1,5 +1,16 @@
-.Weather {
+.Weather .weather-data {
   display: flex;
+}
+
+.Date {
+  font-size: 14px;
+  color: grey;
+  font-weight: 300;
+}
+
+.Weather h2 {
+  font-size: 38px;
+  margin: 20px 0;
 }
 
 .Weather img {

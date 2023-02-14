@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.css";
 
-import Date from "./Date";
 import Search from "./Search";
 import Weather from "./Weather";
 import Forecast from "./Forecast";
@@ -9,12 +9,9 @@ import Forecast from "./Forecast";
 export default function App() {
   return (
     <div className="App">
-      <h1>Weather forecast</h1>
       <div className="Forecast-block">
         <Search />
-        <Date />
-        <h2>London</h2>
-        <Weather temperature={25} humidity={20} windspeed={1} />
+        <Weather defaultCity="New York" />
         <div className="forecast-cards">
           <Forecast
             weather_img="https://cdn-icons-png.flaticon.com/512/2864/2864448.png"
