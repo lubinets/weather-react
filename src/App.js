@@ -3,15 +3,13 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
 
 import Search from "./Search";
-import Weather from "./Weather";
 import Forecast from "./Forecast";
 
 export default function App() {
   return (
     <div className="App">
       <div className="Forecast-block">
-        <Search />
-        <Weather defaultCity="New York" />
+        <Search defaultCity="New York" />
         <div className="forecast-cards">
           <Forecast
             weather_img="https://cdn-icons-png.flaticon.com/512/2864/2864448.png"
