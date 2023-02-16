@@ -2,6 +2,7 @@ import React from "react";
 import "./Weather.css";
 import FormattedDate from "./FormattedDate";
 import FormattedTime from "./FormattedTime";
+import WeatherIcon from "./WeatherIcon";
 import Forecast from "./Forecast";
 
 export default function Weather(props) {
@@ -17,25 +18,23 @@ export default function Weather(props) {
       </div>
       <div className="Weather">
         <h2>{props.data.city}</h2>
-        <div className="weather-data">
-          <img
-            src={props.data.icon}
-            alt={props.data.description}
-            className="weather-img"
-          />
-          <div className="temperature">
+        <ul className="weather-data">
+          <li className="weather-img">
+            <WeatherIcon icon={props.data.icon} alt={props.data.description} />
+          </li>
+          <li className="temperature">
             <span className="degrees">{props.data.temperature}</span>{" "}
             <a href="https://en.wikipedia.org/wiki/Celsius">°C |</a>{" "}
             <a href="https://en.wikipedia.org/wiki/Fahrenheit">°F</a>
-          </div>
-          <div className="indicators">
+          </li>
+          <li className="indicators">
             <ul>
               <li>{props.data.description}</li>
               <li>Humidity: {props.data.humidity}%</li>
               <li>Wind speed: {props.data.wind}m/s</li>
             </ul>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
       <div className="forecast-cards">
         <Forecast

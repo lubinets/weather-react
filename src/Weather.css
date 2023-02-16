@@ -1,5 +1,6 @@
 .Weather .weather-data {
   display: flex;
+  padding: 0;
 }
 
 .Date {
@@ -10,21 +11,22 @@
 
 .Weather h2 {
   font-size: 38px;
-  margin: 20px 0;
+  margin: 15px 0 10px;
 }
 
-.Weather img {
-  max-width: 75px;
-  height: 100%;
+.Weather .weather-img {
+  display: inline-block;
+  width: 120px;
 }
 
 .Weather .temperature {
-  margin: 0px 10px;
+  margin: 25px 10px;
 }
 
 .Weather .degrees {
   font-weight: 700;
   font-size: 24px;
+  color: black;
 }
 
 .Weather a {
@@ -39,16 +41,20 @@
 .Weather ul {
   margin: 0px;
   list-style: none;
-  line-height: 23px;
   padding-left: 20px;
   color: grey;
   font-weight: 300;
-  font-size: 15px;
+}
+
+.Weather .indicators {
+  margin: 25px 0;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .forecast-cards {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 5px;
 }
