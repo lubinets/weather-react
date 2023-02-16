@@ -17,13 +17,6 @@
   margin-top: 50px;
 }
 
-.App .forecast-cards {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  margin-top: 30px;
-}
-
 .repository-link {
   margin-top: 10px;
 }
