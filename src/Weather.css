@@ -19,19 +19,14 @@
   width: 120px;
 }
 
-.Weather .temperature {
-  margin: 25px 10px;
-}
-
 .Weather .degrees {
   font-weight: 700;
-  font-size: 24px;
+  font-size: 28px;
   color: black;
 }
 
 .Weather a {
   text-decoration: none;
-  vertical-align: 4px;
 }
 
 .Weather a:hover {
@@ -39,11 +34,14 @@
 }
 
 .Weather ul {
-  margin: 0px;
   list-style: none;
   padding-left: 20px;
   color: grey;
   font-weight: 300;
+}
+
+.Weather .temperature {
+  margin: 20px 0;
 }
 
 .Weather .indicators {

@@ -3,6 +3,7 @@ import "./Weather.css";
 import FormattedDate from "./FormattedDate";
 import FormattedTime from "./FormattedTime";
 import WeatherIcon from "./WeatherIcon";
+import WeatherTemperature from "./WeatherTemperature";
 import Forecast from "./Forecast";
 
 export default function Weather(props) {
@@ -23,9 +24,7 @@ export default function Weather(props) {
             <WeatherIcon icon={props.data.icon} alt={props.data.description} />
           </li>
           <li className="temperature">
-            <span className="degrees">{props.data.temperature}</span>{" "}
-            <a href="https://en.wikipedia.org/wiki/Celsius">°C |</a>{" "}
-            <a href="https://en.wikipedia.org/wiki/Fahrenheit">°F</a>
+            <WeatherTemperature celsius={props.data.temperature} />
           </li>
           <li className="indicators">
             <ul>
