@@ -14,7 +14,12 @@ export default function App() {
         <a href="https://github.com/lubinets/weather-react" target="blank_">
           Open-source code
         </a>{" "}
-        by Karina Lubinets
+        by{" "}
+        <a href="https://www.linkedin.com/in/karina-lubinets-70309b11a/">
+          Karina Lubinets
+        </a>
+        , hosted on{" "}
+        <a href="https://scintillating-crepe-07248b.netlify.app/">Netlify</a>
       </div>
     </div>
   );
