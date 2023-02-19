@@ -16,16 +16,17 @@
 }
 
 .Forecast .Forecast-day {
-  margin: 15px 0 0;
+  margin: 10px 0 0;
+  opacity: 0.6;
 }
 
 .Forecast img {
-  width: 75px;
+  width: 80px;
   height: 100%;
 }
 
 .Forecast .Forecast-temperature {
-  margin: 5px 17px 15px;
+  margin: 0px 17px 15px;
 }
 
 .Forecast .Forecast-temperature-max {
