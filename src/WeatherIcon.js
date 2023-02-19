@@ -25,7 +25,7 @@ export default function WeatherIcon(props) {
     codeMapping[props.icon]
   }.svg`;
   return (
-    <div>
+    <div className="WeatherIcon">
       <img src={iconUrl} alt={props.alt} />
     </div>
   );
