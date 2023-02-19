@@ -7,6 +7,10 @@ import WeatherTemperature from "./WeatherTemperature";
 import Forecast from "./Forecast";
 
 export default function Weather(props) {
+  function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
+
   return (
     <div>
       <div className="Date">
@@ -28,7 +32,7 @@ export default function Weather(props) {
           </li>
           <li className="indicators">
             <ul>
-              <li>{props.data.description}</li>
+              <li>{capitalizeFirstLetter(props.data.description)}</li>
               <li>Humidity: {props.data.humidity}%</li>
               <li>Wind speed: {props.data.wind}m/s</li>
             </ul>
@@ -36,31 +40,7 @@ export default function Weather(props) {
         </ul>
       </div>
       <div className="forecast-cards">
-        <Forecast
-          weather_img="https://cdn-icons-png.flaticon.com/512/2864/2864448.png"
-          temp_night={10}
-          temp_day={23}
-        />
-        <Forecast
-          weather_img="https://cdn-icons-png.flaticon.com/512/3262/3262919.png"
-          temp_night={10}
-          temp_day={23}
-        />
-        <Forecast
-          weather_img="https://cdn-icons-png.flaticon.com/512/3262/3262933.png"
-          temp_night={10}
-          temp_day={23}
-        />
-        <Forecast
-          weather_img="https://cdn-icons-png.flaticon.com/512/3262/3262946.png"
-          temp_night={10}
-          temp_day={23}
-        />
-        <Forecast
-          weather_img="https://cdn-icons-png.flaticon.com/512/4490/4490117.png"
-          temp_night={10}
-          temp_day={23}
-        />
+        <Forecast coordsData={props.data.coordinates} />
       </div>
     </div>
   );

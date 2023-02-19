@@ -1,12 +1,28 @@
 .Forecast {
   border: 0.5px solid rgb(255, 255, 255);
   border-radius: 4px;
-  padding: 20px 10px;
   box-shadow: 3px 4px 8px rgb(230, 230, 230);
   font-weight: 300;
   font-size: 14px;
 }
+
+.Forecast .Forecast-day {
+  margin: 15px 20px 0;
+}
+
 .Forecast img {
-  max-width: 70px;
-  margin-bottom: 15px;
+  width: 75px;
+  height: 100%;
+}
+
+.Forecast .Forecast-temperature {
+  margin: 5px 17px 15px;
+}
+
+.Forecast .Forecast-temperature-max {
+  font-weight: 600;
+}
+
+.Forecast .Forecast-temperature-min {
+  color: grey;
 }

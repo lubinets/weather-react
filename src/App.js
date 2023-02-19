@@ -8,7 +8,7 @@ export default function App() {
   return (
     <div className="App">
       <div className="Forecast-block">
-        <Search defaultCity="New York" />
+        <Search defaultCity="London" />
       </div>
       <div className="repository-link">
         <a href="https://github.com/lubinets/weather-react" target="blank_">
