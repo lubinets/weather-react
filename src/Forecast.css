@@ -1,13 +1,22 @@
 .Forecast {
-  border: 0.5px solid rgb(255, 255, 255);
-  border-radius: 4px;
-  box-shadow: 3px 4px 8px rgb(230, 230, 230);
   font-weight: 300;
   font-size: 14px;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Forecast .ForecastCard {
+  margin: 6px;
+  box-shadow: 2px 3px 7px rgb(230, 230, 230);
+  border: 0.5px solid rgb(255, 255, 255);
+  border-radius: 4px;
+  width: 91px;
+  padding: 3px;
 }
 
 .Forecast .Forecast-day {
-  margin: 15px 20px 0;
+  margin: 15px 0 0;
 }
 
 .Forecast img {

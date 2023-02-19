@@ -1,6 +1,7 @@
 .Weather .weather-data {
   display: flex;
   padding: 0;
+  margin-bottom: 0;
 }
 
 .Date {
@@ -48,11 +49,4 @@
   margin: 25px 0;
   font-size: 14px;
   line-height: 20px;
-}
-
-.forecast-cards {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  margin-top: 5px;
 }

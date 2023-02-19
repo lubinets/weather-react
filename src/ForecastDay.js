@@ -10,7 +10,7 @@ export default function ForecastDay(props) {
     return days[day];
   }
   return (
-    <div>
+    <div className="ForecastCard">
       <div className="Forecast-day">{day()}</div>
       <WeatherIcon icon={props.data.condition.icon} />
       <div className="Forecast-temperature">
