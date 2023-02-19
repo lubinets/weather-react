@@ -6,7 +6,7 @@ import Search from "./Search";
 
 export default function App() {
   return (
-    <div className="App">
+    <div className="App shadow-lg">
       <div className="Forecast-block">
         <Search defaultCity="London" />
       </div>
